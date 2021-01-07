@@ -56,6 +56,10 @@ object AppDependencies {
     //MockWebServer
     private val mockWebServer = "com.squareup.okhttp3:mockwebserver:${Versions.okHttp}"
 
+    //epoxy
+    private val epoxy = "com.airbnb.android:epoxy:${Versions.epoxy}"
+    private val epoxyProcessor = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
+
 
     val appLibraries = arrayListOf<String>().apply {
         add(kotlinStdLib)
@@ -78,6 +82,7 @@ object AppDependencies {
         add(hiltLifecycle)
         add(hiltWork)
         add(coil)
+        add(epoxy)
     }
 
     val kapts = arrayListOf<String>().apply {
@@ -85,6 +90,7 @@ object AppDependencies {
         add(daggerProcessor)
         add(hiltCompiler)
         add(hiltAndroidCompiler)
+        add(epoxyProcessor)
     }
 
     val testLibraries = arrayListOf<String>().apply {

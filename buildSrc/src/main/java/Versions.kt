@@ -27,4 +27,6 @@ object Versions {
     val junit = "4.13.1"
     val coreTesting = "2.1.0"
 
+    val epoxy = "4.3.1"
+
 }
